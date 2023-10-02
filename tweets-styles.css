@@ -18,6 +18,35 @@ img {
   margin-right: 15px;
 }
 
+.repost {
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.gray {
+  color: gray;
+}
+
+.blue {
+  color: #1da1f2;
+}
+
+.active-link {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  background-color: #1da1f2;
+  padding: 10px;
+  color: white;
+  border-radius: 2px;
+}
+
+.footer-link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .tweet-wrap {
   max-width: 490px;
   background: #fff;
@@ -28,6 +57,22 @@ img {
   padding-bottom: 10px;
   border-bottom: 1px solid #e6ecf0;
   border-top: 1px solid #e6ecf0;
+}
+
+.tweet-footer {
+  max-width: 490px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 3px;
+  padding: 30px;
+  border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .tweet-head {
@@ -64,12 +109,18 @@ img {
   font-weight: normal;
   margin-top: 5px;
 }
+
 .tweet-img-wrap {
   padding-left: 60px;
 }
 
 .tweet-img {
   max-height: 350px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
 }
 
 .show-more {
@@ -100,9 +151,7 @@ img {
   .tweet-header {
     flex-direction: column;
   }
-  .tweet-header img {
-    margin-bottom: 20px;
-  }
+
   .tweet-header-info p {
     margin-bottom: 30px;
   }
